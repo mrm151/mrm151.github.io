@@ -125,7 +125,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             if written:
                 val = (index + 1) / len(files) * 100
-                print(f"updating to {val}")
                 self.progressBar.setValue(int(val))
 
     @Slot()
